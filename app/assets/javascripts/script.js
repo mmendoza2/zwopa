@@ -1,3 +1,8 @@
+
+
+$(document).ready(function() {
+
+
 function menu() {
 	$(".menu,.nav .home,.nav .about,.nav .work,.nav .contact ").click(function(){
 		$(".nav-section").toggleClass("show");
@@ -130,3 +135,6 @@ function map() {
 		scrollwheel: false
 	});
 }
+
+
+});

@@ -6,6 +6,11 @@
  * Released under the MIT License.
  */
 
+
+
+$(document).ready(function() {
+
+
 if(window.google && window.google.maps){
 
   var GMaps = (function(global) {
@@ -468,7 +473,7 @@ if(window.google && window.google.maps){
                   if(!me.pixel){
                     me.pixel = map.getProjection().fromLatLngToPoint(me.latLng)
                   }
-                  
+
                   options[name].apply(this, [me]);
                 });
               }
@@ -1917,3 +1922,6 @@ if(window.google && window.google.maps){
 else {
   throw 'Google Maps API is required. Please register the following JavaScript library http://maps.google.com/maps/api/js?sensor=true.'
 }
+
+
+});
